@@ -14,16 +14,16 @@ function toggleDayNight() {
     containerHeaven.classList.add('sunset');
   }
   leaves.forEach(leaf => {
-    let gradientColors = isDay ? 'red' : '#e6f331';
+    let gradientColors = isDay ? 'e6f331' : '#e6f331'; // color de las hojas de las flores
     leaf.style.backgroundImage = `linear-gradient(to top, ${gradientColors}, ${gradientColors})`;
   });
   leaves4.forEach(leaf => {
-    let gradientColors = isDay ? 'red' : '#e6f331';
+    let gradientColors = isDay ? 'e6f331' : '#e6f331'; // color de las hojas de las flores
     leaf.style.backgroundImage = `linear-gradient(to top, ${gradientColors}, ${gradientColors})`;
   });
   leavesCircle.forEach(leaf => {
-    let gradientColors = isDay ? '153,0,204' : '255, 235, 18';
-    let borderCircle = isDay ? '#F283FE' : '#fff';
+    let gradientColors = isDay ? '255, 235, 18' : '255, 235, 18'; // color del centro de la flor (los colores deben ser en rgb)
+    let borderCircle = isDay ? '##fff' : '#fff'; // color del centro externo de la flor
     leaf.style.backgroundColor = borderCircle;
     changeSpecificAfterStyle(leaf, 'background-image', `repeating-linear-gradient(135deg,
       rgba(0, 0, 0, 0.03) 0px,
